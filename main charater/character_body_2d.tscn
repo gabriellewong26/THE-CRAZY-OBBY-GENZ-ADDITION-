@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://30a1kkacla1n"]
+
+[ext_resource type="Script" uid="uid://ol7lar15indl" path="res://main charater/character_body_2d.gd" id="1_4ni07"]
+[ext_resource type="Texture2D" uid="uid://dtydmm7lndrbq" path="res://1109a6e6-7412-40f0-af83-f14252b888bf.png" id="1_fy43b"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4ni07"]
+radius = 629.8157
+height = 1259.6313
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=2030758]
+scale = Vector2(0.965, 0.965)
+script = ExtResource("1_4ni07")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=982398133]
+position = Vector2(1.0362701, 10.362705)
+scale = Vector2(0.081173584, 0.115586124)
+texture = ExtResource("1_fy43b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=1182755062]
+position = Vector2(-51.06438, -71.72284)
+scale = Vector2(1, 0.9999997)
+shape = SubResource("CapsuleShape2D_4ni07")
